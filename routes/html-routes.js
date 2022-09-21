@@ -1,5 +1,5 @@
 const path = require('path');
-const router = require('express').Router();
+const app = require('express').Router();
 
 // GET requests
 app.get('/notes', (req, res) => {
@@ -10,4 +10,4 @@ app.get('*', (req, res) => {
     res.sendFile(path.join(__dirname, '../public/index.html'));
 });
 
-module.exports = router;
+module.exports = app;
