@@ -9,8 +9,8 @@ class Store {
         return readFileAsync('db/db.json', 'utf8');
     }
 
-    write(note) {
-        return writeFileAsync('db/db.json', JSON.stringify(note));
+    write(notes) {
+        return writeFileAsync('db/db.json', JSON.stringify(notes));
     } 
 
     getNotes() {

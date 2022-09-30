@@ -12,8 +12,8 @@ app.use(express.json());
 app.use(express.static('public'));
 
 // defining routes to use
-app.use('/', htmlRoutes);
 app.use('/api', apiRoutes);
+app.use('/', htmlRoutes);
 
 app.listen(PORT, () => {
     console.log(`Note Taker listening at http://localhost:${PORT}`);
